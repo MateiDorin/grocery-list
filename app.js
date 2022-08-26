@@ -48,7 +48,6 @@ function addItem(event) {
     deleteBtn.addEventListener('click', deleteItem);
     editBtn.addEventListener('click', editItem);
 
-
     //append child
     list.appendChild(element);
     // display alert
@@ -124,8 +123,6 @@ function editItem(event){
     console.log(editElement)
 }
 
-
-
 // set back to default
 function setBackToDefault() {
   grocery.value = "";
@@ -140,7 +137,6 @@ function addToLocalStorage(id, value) {
   let items = getLocalStorage()
   items.push(grocery);
   localStorage.setItem('list', JSON.stringify(items))
-
 }
 
 function removeFromLocalStorage(id) {
